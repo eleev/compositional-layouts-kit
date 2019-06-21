@@ -81,7 +81,7 @@ extension ViewController {
         collectionView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         collectionView.backgroundColor = .systemBackground
         collectionView.delegate = self
-        collectionView.register(OutlineItemCell.self, forCellWithReuseIdentifier: OutlineItemCell.reuseIdentifer)
+        collectionView.register(OutlineItemCell.self, forCellWithReuseIdentifier: OutlineItemCell.reuseIdentifier)
         self.outlineCollectionView = collectionView
     }
     
@@ -90,7 +90,7 @@ extension ViewController {
             <Section, OutlineItem>(collectionView: outlineCollectionView) {
                 (collectionView: UICollectionView, indexPath: IndexPath, menuItem: OutlineItem) -> UICollectionViewCell? in
                 guard let cell = collectionView.dequeueReusableCell(
-                    withReuseIdentifier: OutlineItemCell.reuseIdentifer,
+                    withReuseIdentifier: OutlineItemCell.reuseIdentifier,
                     for: indexPath) as? OutlineItemCell else { fatalError("Could not create new cell") }
                 cell.label.text = menuItem.title
                 cell.indentLevel = menuItem.indentLevel
