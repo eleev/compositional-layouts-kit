@@ -67,8 +67,14 @@ class ViewController: UIViewController {
             OutlineItem(title: "Advanced Compositional Layouts", indentLevel: 0, subitems: [
                 OutlineItem(title: "Gallery Layout", indentLevel: 1, viewController: GalleryViewController.self, configuration: vcDefaultConfiguration),
                 OutlineItem(title: "Waterfall Layout", indentLevel: 1, viewController: WaterfallViewController.self, configuration: vcDefaultConfiguration),
-                OutlineItem(title: "Mosaic Layout", indentLevel: 1, viewController: MosaicViewController.self, configuration: vcDefaultConfiguration)
-                ])
+                OutlineItem(title: "Mosaic Layout", indentLevel: 1, viewController: MosaicViewController.self, configuration: vcDefaultConfiguration),
+                OutlineItem(title: "Tile Grid Layouts", indentLevel: 1, subitems: [
+                    OutlineItem(title: "Tile Grid Layout", indentLevel: 2, viewController: TileGridViewController.self, configuration: vcDefaultConfiguration),
+                    OutlineItem(title: "Banner Grid Layout", indentLevel: 2, viewController: BanerGridViewController.self, configuration: vcDefaultConfiguration),
+                    OutlineItem(title: "Portrait Grid Layout", indentLevel: 2, viewController: PortraitGridViewController.self, configuration: vcDefaultConfiguration)
+                    ])
+                ]),
+            
         ]
     }()
 }
