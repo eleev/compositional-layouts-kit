@@ -51,7 +51,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Layouts"
+        navigationItem.title = "Advanced Compositional Layouts"
         configureCollectionView()
         configureDataSource()
     }
@@ -64,7 +64,7 @@ class ViewController: UIViewController {
     
     private lazy var menuItems: [OutlineItem] = {
         return [
-            OutlineItem(title: "Vertical Advanced Layouts", indentLevel: 0, subitems: [
+            OutlineItem(title: "Vertical", indentLevel: 0, subitems: [
                 OutlineItem(title: "Waterfall", indentLevel: 1, viewController: WaterfallViewController.self, configuration: vcDefaultConfiguration),
                 OutlineItem(title: "Mosaic", indentLevel: 1, viewController: MosaicViewController.self, configuration: vcDefaultConfiguration),
                 OutlineItem(title: "Tiled", indentLevel: 1, subitems: [
@@ -73,12 +73,33 @@ class ViewController: UIViewController {
                     OutlineItem(title: "Portrait Grid", indentLevel: 2, viewController: PortraitTileGridViewController.self, configuration: vcDefaultConfiguration)
                     ])
                 ]),
-            OutlineItem(title: "Horizontal Advanced Layouts", indentLevel: 0, subitems: [
+            OutlineItem(title: "Horizontal", indentLevel: 0, subitems: [
                 OutlineItem(title: "Gallery", indentLevel: 1, viewController: GalleryViewController.self, configuration: vcDefaultConfiguration),
-                OutlineItem(title: "Group Grid", indentLevel: 1, viewController: GroupGridViewController.self, configuration: vcDefaultConfiguration)
+                OutlineItem(title: "Group Grid", indentLevel: 1, viewController: GroupGridViewController.self, configuration: vcDefaultConfiguration),
+                OutlineItem(title: "Mosaic Redux", indentLevel: 1, subitems: [
+                    OutlineItem(title: "Mosaic Small Redux", indentLevel: 2, viewController: MosaicReduxViewController.self, configuration: { vc in
+                        guard let mosaic = vc as? MosaicReduxViewController else { return }
+                        mosaic.layoutFractionalConfig = .small
+                    }),
+                    OutlineItem(title: "Mosaic Big Redux", indentLevel: 2, viewController: MosaicReduxViewController.self, configuration: { vc in
+                        guard let mosaic = vc as? MosaicReduxViewController else { return }
+                        mosaic.layoutFractionalConfig = .big
+                    })
+                    ]),
+                OutlineItem(title: "Tile Gallery", indentLevel: 1, subitems: [
+                    OutlineItem(title: "Vertically Continious", indentLevel: 2, viewController: TileGalleryViewController.self, configuration: { vc in
+                        guard let tileVC = vc as? TileGalleryViewController else { return }
+                        tileVC.navigationItem.title = "Tile Vertically Continious Layout"
+                        tileVC.layoutBehavior = .verticallyContinious
+                    }),
+                    OutlineItem(title: "Orthogonal Magnet", indentLevel: 2, viewController: TileGalleryViewController.self, configuration: { vc in
+                        guard let tileVC = vc as? TileGalleryViewController else { return }
+                        tileVC.navigationItem.title = "Tile Orthogonal Magnet Layout"
+                        tileVC.layoutBehavior = .orthogonalMagnet
+                    })
+                    ])
                 ]),
-            OutlineItem(title: "Orthogonal Advanced Layouts", indentLevel: 0, subitems: [
-                ])
+            OutlineItem(title: "Orthogonal", indentLevel: 0, subitems: [ /* todo */ ])
         ]
     }()
 }

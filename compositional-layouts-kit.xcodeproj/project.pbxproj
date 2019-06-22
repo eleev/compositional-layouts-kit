@@ -32,6 +32,8 @@
 		A96C8C9B22BE1EC60051A352 /* BannerTileGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C8C9A22BE1EC60051A352 /* BannerTileGridViewController.swift */; };
 		A96C8C9D22BE1F3E0051A352 /* PortraitTileGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C8C9C22BE1F3E0051A352 /* PortraitTileGridViewController.swift */; };
 		A96C8CA022BE42250051A352 /* GroupGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C8C9F22BE42250051A352 /* GroupGridViewController.swift */; };
+		A96C8CA222BE521C0051A352 /* MosaicReduxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C8CA122BE521C0051A352 /* MosaicReduxViewController.swift */; };
+		A96C8CA422BE67390051A352 /* TileGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C8CA322BE67390051A352 /* TileGalleryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		A96C8C9A22BE1EC60051A352 /* BannerTileGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerTileGridViewController.swift; sourceTree = "<group>"; };
 		A96C8C9C22BE1F3E0051A352 /* PortraitTileGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitTileGridViewController.swift; sourceTree = "<group>"; };
 		A96C8C9F22BE42250051A352 /* GroupGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupGridViewController.swift; sourceTree = "<group>"; };
+		A96C8CA122BE521C0051A352 /* MosaicReduxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicReduxViewController.swift; sourceTree = "<group>"; };
+		A96C8CA322BE67390051A352 /* TileGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileGalleryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +177,8 @@
 				A96C8C9C22BE1F3E0051A352 /* PortraitTileGridViewController.swift */,
 				A92DA78922BA5E3C007A6C2D /* GalleryViewController.swift */,
 				A96C8C9F22BE42250051A352 /* GroupGridViewController.swift */,
+				A96C8CA122BE521C0051A352 /* MosaicReduxViewController.swift */,
+				A96C8CA322BE67390051A352 /* TileGalleryViewController.swift */,
 			);
 			path = "Compositional Layouts VCs";
 			sourceTree = "<group>";
@@ -286,6 +292,7 @@
 				A96C8C9B22BE1EC60051A352 /* BannerTileGridViewController.swift in Sources */,
 				A92DA78022BA5BEC007A6C2D /* OutlineItemCell.swift in Sources */,
 				A92DA78A22BA5E3C007A6C2D /* GalleryViewController.swift in Sources */,
+				A96C8CA422BE67390051A352 /* TileGalleryViewController.swift in Sources */,
 				A92DA78E22BA5E73007A6C2D /* MosaicViewController.swift in Sources */,
 				A92BBB7722BD4109007322BA /* UIColor+Colors.swift in Sources */,
 				A92DA79B22BA9FE5007A6C2D /* ImageFactory.swift in Sources */,
@@ -297,6 +304,7 @@
 				A96C8C9D22BE1F3E0051A352 /* PortraitTileGridViewController.swift in Sources */,
 				A96C8CA022BE42250051A352 /* GroupGridViewController.swift in Sources */,
 				A92DA78222BA5C38007A6C2D /* ItemBadgeSupplementaryViewController.swift in Sources */,
+				A96C8CA222BE521C0051A352 /* MosaicReduxViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
