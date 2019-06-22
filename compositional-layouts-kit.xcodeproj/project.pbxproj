@@ -28,6 +28,9 @@
 		A92DA79822BA9A93007A6C2D /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92DA79722BA9A93007A6C2D /* Configurable.swift */; };
 		A92DA79B22BA9FE5007A6C2D /* ImageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92DA79A22BA9FE5007A6C2D /* ImageFactory.swift */; };
 		A96C8C9722BE067C0051A352 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A96C8C9622BE067C0051A352 /* .gitignore */; };
+		A96C8C9922BE06B80051A352 /* TileGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C8C9822BE06B80051A352 /* TileGridViewController.swift */; };
+		A96C8C9B22BE1EC60051A352 /* BannerTileGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C8C9A22BE1EC60051A352 /* BannerTileGridViewController.swift */; };
+		A96C8C9D22BE1F3E0051A352 /* PortraitTileGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C8C9C22BE1F3E0051A352 /* PortraitTileGridViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		A92DA79722BA9A93007A6C2D /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
 		A92DA79A22BA9FE5007A6C2D /* ImageFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFactory.swift; sourceTree = "<group>"; };
 		A96C8C9622BE067C0051A352 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A96C8C9822BE06B80051A352 /* TileGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileGridViewController.swift; sourceTree = "<group>"; };
+		A96C8C9A22BE1EC60051A352 /* BannerTileGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerTileGridViewController.swift; sourceTree = "<group>"; };
+		A96C8C9C22BE1F3E0051A352 /* PortraitTileGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitTileGridViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +167,9 @@
 				A92DA78922BA5E3C007A6C2D /* GalleryViewController.swift */,
 				A92DA78B22BA5E47007A6C2D /* WaterfallViewController.swift */,
 				A92DA78D22BA5E73007A6C2D /* MosaicViewController.swift */,
+				A96C8C9822BE06B80051A352 /* TileGridViewController.swift */,
+				A96C8C9A22BE1EC60051A352 /* BannerTileGridViewController.swift */,
+				A96C8C9C22BE1F3E0051A352 /* PortraitTileGridViewController.swift */,
 			);
 			path = "Compositional Layouts VCs";
 			sourceTree = "<group>";
@@ -271,6 +280,7 @@
 				A92DA79322BA9A34007A6C2D /* ImageCell.swift in Sources */,
 				A92DA76C22BA59B2007A6C2D /* AppDelegate.swift in Sources */,
 				A92DA76E22BA59B2007A6C2D /* SceneDelegate.swift in Sources */,
+				A96C8C9B22BE1EC60051A352 /* BannerTileGridViewController.swift in Sources */,
 				A92DA78022BA5BEC007A6C2D /* OutlineItemCell.swift in Sources */,
 				A92DA78A22BA5E3C007A6C2D /* GalleryViewController.swift in Sources */,
 				A92DA78E22BA5E73007A6C2D /* MosaicViewController.swift in Sources */,
@@ -278,8 +288,10 @@
 				A92DA79B22BA9FE5007A6C2D /* ImageFactory.swift in Sources */,
 				A92DA79822BA9A93007A6C2D /* Configurable.swift in Sources */,
 				A92DA78422BA5C99007A6C2D /* TextCell.swift in Sources */,
+				A96C8C9922BE06B80051A352 /* TileGridViewController.swift in Sources */,
 				A92DA78622BA5CBE007A6C2D /* BadgeSupplementaryView.swift in Sources */,
 				A92DA79622BA9A8B007A6C2D /* ReuseIdentifiable.swift in Sources */,
+				A96C8C9D22BE1F3E0051A352 /* PortraitTileGridViewController.swift in Sources */,
 				A92DA78222BA5C38007A6C2D /* ItemBadgeSupplementaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
