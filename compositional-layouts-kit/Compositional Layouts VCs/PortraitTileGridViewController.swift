@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PortraitGridViewController: UIViewController {
+class PortraitTileGridViewController: UIViewController {
     
     enum Section {
         case main
@@ -25,7 +25,7 @@ class PortraitGridViewController: UIViewController {
     }
 }
 
-extension PortraitGridViewController {
+extension PortraitTileGridViewController {
     
     func createLayout() -> UICollectionViewLayout {
         let layout = UICollectionViewCompositionalLayout {
@@ -62,7 +62,7 @@ extension PortraitGridViewController {
     }
 }
 
-extension PortraitGridViewController {
+extension PortraitTileGridViewController {
     private func configureHierarchy() {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createLayout())
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]

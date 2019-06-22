@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BanerGridViewController: UIViewController {
+class BanerTileGridViewController: UIViewController {
     
     enum Section {
         case main
@@ -25,7 +25,7 @@ class BanerGridViewController: UIViewController {
     }
 }
 
-extension BanerGridViewController {
+extension BanerTileGridViewController {
     
     func createLayout() -> UICollectionViewLayout {
         let layout = UICollectionViewCompositionalLayout {
@@ -62,7 +62,7 @@ extension BanerGridViewController {
     }
 }
 
-extension BanerGridViewController {
+extension BanerTileGridViewController {
     private func configureHierarchy() {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createLayout())
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
