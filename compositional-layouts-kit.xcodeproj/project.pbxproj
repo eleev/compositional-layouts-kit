@@ -34,6 +34,7 @@
 		A96C8CA022BE42250051A352 /* GroupGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C8C9F22BE42250051A352 /* GroupGridViewController.swift */; };
 		A96C8CA222BE521C0051A352 /* MosaicReduxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C8CA122BE521C0051A352 /* MosaicReduxViewController.swift */; };
 		A96C8CA422BE67390051A352 /* TileGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C8CA322BE67390051A352 /* TileGalleryViewController.swift */; };
+		A9FFDBAE22BF4E0F00246032 /* ShowcaseGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFDBAD22BF4E0F00246032 /* ShowcaseGalleryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		A96C8C9F22BE42250051A352 /* GroupGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupGridViewController.swift; sourceTree = "<group>"; };
 		A96C8CA122BE521C0051A352 /* MosaicReduxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicReduxViewController.swift; sourceTree = "<group>"; };
 		A96C8CA322BE67390051A352 /* TileGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileGalleryViewController.swift; sourceTree = "<group>"; };
+		A9FFDBAD22BF4E0F00246032 /* ShowcaseGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowcaseGalleryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 				A96C8C9F22BE42250051A352 /* GroupGridViewController.swift */,
 				A96C8CA122BE521C0051A352 /* MosaicReduxViewController.swift */,
 				A96C8CA322BE67390051A352 /* TileGalleryViewController.swift */,
+				A9FFDBAD22BF4E0F00246032 /* ShowcaseGalleryViewController.swift */,
 			);
 			path = "Compositional Layouts VCs";
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				A92DA79622BA9A8B007A6C2D /* ReuseIdentifiable.swift in Sources */,
 				A96C8C9D22BE1F3E0051A352 /* PortraitTileGridViewController.swift in Sources */,
 				A96C8CA022BE42250051A352 /* GroupGridViewController.swift in Sources */,
+				A9FFDBAE22BF4E0F00246032 /* ShowcaseGalleryViewController.swift in Sources */,
 				A92DA78222BA5C38007A6C2D /* ItemBadgeSupplementaryViewController.swift in Sources */,
 				A96C8CA222BE521C0051A352 /* MosaicReduxViewController.swift in Sources */,
 			);
