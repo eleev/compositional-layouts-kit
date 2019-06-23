@@ -14,7 +14,7 @@ class GalleryViewController: UIViewController {
         case main
     }
     
-    var dataSource: UICollectionViewDiffableDataSource<Section, Int>! = nil
+    var dataSource: UICollectionViewDiffableDataSource<Section, ImageModel>! = nil
     var collectionView: UICollectionView! = nil
     
     override func viewDidLoad() {
@@ -63,22 +63,35 @@ extension GalleryViewController {
         view.addSubview(collectionView)
     }
     private func configureDataSource() {
-        dataSource = UICollectionViewDiffableDataSource<Section, Int>(collectionView: collectionView) {
-            (collectionView: UICollectionView, indexPath: IndexPath, identifier: Int) -> UICollectionViewCell? in
+        dataSource = UICollectionViewDiffableDataSource<Section, ImageModel>(collectionView: collectionView) {
+            (collectionView: UICollectionView, indexPath: IndexPath, model: ImageModel) -> UICollectionViewCell? in
             
             // Get a cell of the desired kind.
             guard let cell = collectionView.dequeueReusableCell(
                 withReuseIdentifier: ImageCell.reuseIdentifier,
                 for: indexPath) as? ImageCell else { fatalError("Could not create new cell") }
-            cell.image = ImageFactory.produce(using: .random)
+            cell.image = model.image
+            cell.imageContentMode = .scaleAspectFill
+            cell.clipsToBounds = true
+            cell.layer.cornerRadius = 10
+            cell.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner, .layerMinXMinYCorner]
             
             return cell
         }
         
         // initial data
-        let snapshot = NSDiffableDataSourceSnapshot<Section, Int>()
+        let snapshot = NSDiffableDataSourceSnapshot<Section, ImageModel>()
         snapshot.appendSections([.main])
-        snapshot.appendItems(Array(0..<10))
+
+        func produceImage() -> UIImage {
+            guard let image = ImageFactory.produce(using: .random) else {
+                fatalError("Could not generate an UIImage instance by using the ImageFactory struct")
+            }
+            return image
+        }
+        
+        let models = (0..<100).map { _ in ImageModel(image: produceImage()) }
+        snapshot.appendItems(models)
         dataSource.apply(snapshot, animatingDifferences: false)
     }
 }
