@@ -13,7 +13,7 @@
 ### If you like the project, please give it a star ⭐ It will show the creator your appreciation and help others to discover the repo.
 
 # ✍️ About
-📏 A set of advanced compositional layouts for `UICollectionViewCompositionalLayout` with examples [Swift 5.1, iOS 13]. All the layouts support both `portrait` and `landscape` orientations as well as support for all `iOS` and `iPadOS` related size classes.
+📏 A set of advanced compositional layouts for `UICollectionView` with examples [Swift 5.1, iOS 13]. All the layouts support both `portrait` and `landscape` orientations as well as support for all `iOS` and `iPadOS` related size classes.
 
 # 📚 Contents
 Please wait while the `.gif` files are loading (there are 12 files, that weight around 200Mb)...
