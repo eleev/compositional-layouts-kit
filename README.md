@@ -43,4 +43,4 @@ The assets used in this project were taken from the `Web`. Do not use them for c
 [Astemir Eleev](https://github.com/jVirus)
 
 # 🔖 Licence 
-The project is available under [MIT Licence](https://github.com/jVirus/compositional-layouts-kit /blob/master/LICENSE)
+The project is available under [MIT Licence](https://github.com/jVirus/compositional-layouts-kit/blob/master/LICENSE)
