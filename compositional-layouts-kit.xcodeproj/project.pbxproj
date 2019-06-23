@@ -34,6 +34,7 @@
 		A96C8CA022BE42250051A352 /* GroupGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C8C9F22BE42250051A352 /* GroupGridViewController.swift */; };
 		A96C8CA222BE521C0051A352 /* MosaicReduxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C8CA122BE521C0051A352 /* MosaicReduxViewController.swift */; };
 		A96C8CA422BE67390051A352 /* TileGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C8CA322BE67390051A352 /* TileGalleryViewController.swift */; };
+		A9743CAC22BF8E6C006D4569 /* cover-composlayouts.png in Resources */ = {isa = PBXBuildFile; fileRef = A9743CAB22BF8E6C006D4569 /* cover-composlayouts.png */; };
 		A9FFDBAE22BF4E0F00246032 /* ShowcaseGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFDBAD22BF4E0F00246032 /* ShowcaseGalleryViewController.swift */; };
 		A9FFDBB022BF7F7C00246032 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A9FFDBAF22BF7F7C00246032 /* README.md */; };
 		A9FFDBB222BF89AF00246032 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = A9FFDBB122BF89AF00246032 /* assets */; };
@@ -69,6 +70,7 @@
 		A96C8C9F22BE42250051A352 /* GroupGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupGridViewController.swift; sourceTree = "<group>"; };
 		A96C8CA122BE521C0051A352 /* MosaicReduxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicReduxViewController.swift; sourceTree = "<group>"; };
 		A96C8CA322BE67390051A352 /* TileGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileGalleryViewController.swift; sourceTree = "<group>"; };
+		A9743CAB22BF8E6C006D4569 /* cover-composlayouts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cover-composlayouts.png"; sourceTree = "<group>"; };
 		A9FFDBAD22BF4E0F00246032 /* ShowcaseGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowcaseGalleryViewController.swift; sourceTree = "<group>"; };
 		A9FFDBAF22BF7F7C00246032 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A9FFDBB122BF89AF00246032 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		A92DA75F22BA59B2007A6C2D = {
 			isa = PBXGroup;
 			children = (
+				A9743CAB22BF8E6C006D4569 /* cover-composlayouts.png */,
 				A96C8C9622BE067C0051A352 /* .gitignore */,
 				A9FFDBAF22BF7F7C00246032 /* README.md */,
 				A9FFDBB122BF89AF00246032 /* assets */,
@@ -277,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9743CAC22BF8E6C006D4569 /* cover-composlayouts.png in Resources */,
 				A9FFDBB022BF7F7C00246032 /* README.md in Resources */,
 				A96C8C9722BE067C0051A352 /* .gitignore in Resources */,
 				A9FFDBB222BF89AF00246032 /* assets in Resources */,
