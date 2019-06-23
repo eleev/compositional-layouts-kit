@@ -99,7 +99,9 @@ class ViewController: UIViewController {
                     })
                     ])
                 ]),
-            OutlineItem(title: "Orthogonal", indentLevel: 0, subitems: [ /* todo */ ])
+            OutlineItem(title: "Orthogonal", indentLevel: 0, subitems: [
+                OutlineItem(title: "Showcase Gallery", indentLevel: 1, viewController: ShowcaseGalleryViewController.self, configuration: vcDefaultConfiguration)
+                ])
         ]
     }()
 }
