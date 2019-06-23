@@ -35,6 +35,7 @@
 		A96C8CA222BE521C0051A352 /* MosaicReduxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C8CA122BE521C0051A352 /* MosaicReduxViewController.swift */; };
 		A96C8CA422BE67390051A352 /* TileGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C8CA322BE67390051A352 /* TileGalleryViewController.swift */; };
 		A9FFDBAE22BF4E0F00246032 /* ShowcaseGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFDBAD22BF4E0F00246032 /* ShowcaseGalleryViewController.swift */; };
+		A9FFDBB022BF7F7C00246032 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A9FFDBAF22BF7F7C00246032 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		A96C8CA122BE521C0051A352 /* MosaicReduxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicReduxViewController.swift; sourceTree = "<group>"; };
 		A96C8CA322BE67390051A352 /* TileGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileGalleryViewController.swift; sourceTree = "<group>"; };
 		A9FFDBAD22BF4E0F00246032 /* ShowcaseGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowcaseGalleryViewController.swift; sourceTree = "<group>"; };
+		A9FFDBAF22BF7F7C00246032 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				A96C8C9622BE067C0051A352 /* .gitignore */,
+				A9FFDBAF22BF7F7C00246032 /* README.md */,
 				A92DA76A22BA59B2007A6C2D /* compositional-layouts-kit */,
 				A92DA76922BA59B2007A6C2D /* Products */,
 			);
@@ -271,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9FFDBB022BF7F7C00246032 /* README.md in Resources */,
 				A96C8C9722BE067C0051A352 /* .gitignore in Resources */,
 				A92DA77822BA59B3007A6C2D /* LaunchScreen.storyboard in Resources */,
 				A92DA79022BA9969007A6C2D /* Comics.xcassets in Resources */,
