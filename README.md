@@ -6,7 +6,7 @@
 [![API](https://img.shields.io/badge/uikit-UICollectionViewCompositionalLayout-red.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 23/June/2019.**
+**Last Update: 24/June/2019.**
 
 ![](cover-composlayouts.png)
 
@@ -26,7 +26,7 @@ Please wait while the `.gif` files are loading (there are 12 files, that weight 
 ![](assets/banergrid-iphone.gif) | ![](assets/portraitgrid-iphone.gif) | ![](assets/verticallycont-iphone.gif) 
    
 # 🏗 Setup
-There are no dependencies as well as any package managers involved. The project has more like a demo app setup e.g simply grab what you need for your needs. Each layout is wrapped into a separate `UIViewController` type for convenience (I could've createa separate layout factory and have just a single view controller, however, for sake of simplicity I decided make it possible to extract layouts with all the dependent code).
+There are no dependencies as well as any package managers involved. The project has more like a demo app setup e.g simply grab what you need for your needs. Each layout is wrapped into a separate `UIViewController` type for convenience (I could've create a separate layout factory and have just a single view controller, however, for the sake of simplicity I decided to make it possible to extract layouts with all the dependent code).
 
 # ✈️ Usage
 Simply grab a `UIViewController` type with a custom layout and adjust it for your needs. The layouts are in [here](https://github.com/jVirus/compositional-layouts-kit/tree/master/compositional-layouts-kit/Compositional%20Layouts%20VCs).
