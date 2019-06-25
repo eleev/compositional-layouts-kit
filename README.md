@@ -6,7 +6,7 @@
 [![API](https://img.shields.io/badge/uikit-UICollectionViewCompositionalLayout-red.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 24/June/2019.**
+**Last Update: 25/June/2019.**
 
 ![](cover-composlayouts.png)
 
@@ -36,7 +36,7 @@ Simply grab a `UIViewController` type with a custom layout and adjust it for you
 2. If you want to have different layouts in portrait and landscape device orientations, you need to use either one of the following approaches:
    - Use `viewWillTransition(to size: , with coordinator:)` method (of `UIViewController` class) and `setCollectionViewLayout(, animated: completion:)` method of `UICollectionView` class to properly animate changes of layout when changing orientation.
    - More advanced and preffered approach is to implement a custom `UICollectionViewTransitionLayout`, which is (a quote from `Apple's Docs`):
-   >> A special type of layout object that lets you implement behaviors when changing from one layout to another in your collection view.
+   > A special type of layout object that lets you implement behaviors when changing from one layout to another in your collection view.
    
 # ⚠️ Warning 
 The assets used in this project were taken from the `Web`. Do not use them for commercial purposes and proprietary projects. They are used just for demonstration only. 
