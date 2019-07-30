@@ -3,7 +3,7 @@
 [![Platform](https://img.shields.io/badge/platform-iOS_13-yellow.svg)]()
 [![Platform](https://img.shields.io/badge/platform-iPadOS_13-darkyellow.svg)]()
 [![Language](https://img.shields.io/badge/language-Swift_5.1-orange.svg)]()
-[![Examples](https://img.shields.io/badge/examples-12-orange.svg)]()
+[![CustomLayouts](https://img.shields.io/badge/custom_layouts-12-orange.svg)]()
 [![API](https://img.shields.io/badge/uikit-UICollectionViewCompositionalLayout-red.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
