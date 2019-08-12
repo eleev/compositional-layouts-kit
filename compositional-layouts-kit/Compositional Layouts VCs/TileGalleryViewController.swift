@@ -10,10 +10,10 @@ import UIKit
 
 class TileGalleryViewController: UIViewController {
 
-    var layoutBehavior: LayoutBehavior = .verticallyContinious
+    var layoutBehavior: LayoutBehavior = .verticallyContinuous
     
     enum LayoutBehavior {
-        case verticallyContinious
+        case verticallyContinuous
         case orthogonalMagnet
     }
     
