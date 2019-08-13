@@ -90,7 +90,7 @@ class ViewController: UIViewController {
                     OutlineItem(title: "Vertically Continious", indentLevel: 2, viewController: TileGalleryViewController.self, configuration: { vc in
                         guard let tileVC = vc as? TileGalleryViewController else { return }
                         tileVC.navigationItem.title = "Tile Vertically Continious Layout"
-                        tileVC.layoutBehavior = .verticallyContinious
+                        tileVC.layoutBehavior = .verticallyContinuous
                     }),
                     OutlineItem(title: "Orthogonal Magnet", indentLevel: 2, viewController: TileGalleryViewController.self, configuration: { vc in
                         guard let tileVC = vc as? TileGalleryViewController else { return }
