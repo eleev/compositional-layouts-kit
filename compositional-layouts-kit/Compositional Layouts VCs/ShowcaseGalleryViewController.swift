@@ -93,7 +93,7 @@ extension ShowcaseGalleryViewController {
         }
         
         // initial data
-        let snapshot = NSDiffableDataSourceSnapshot<Int, ImageModel>()
+        var snapshot = NSDiffableDataSourceSnapshot<Int, ImageModel>()
         var identifierOffset = 0
         let itemsPerSection = 8
         for section in 0..<8 {

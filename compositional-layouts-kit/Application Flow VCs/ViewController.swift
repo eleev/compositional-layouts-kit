@@ -156,7 +156,7 @@ extension ViewController {
     }
     
     func snapshotForCurrentState() -> NSDiffableDataSourceSnapshot<Section, OutlineItem> {
-        let snapshot = NSDiffableDataSourceSnapshot<Section, OutlineItem>()
+        var snapshot = NSDiffableDataSourceSnapshot<Section, OutlineItem>()
         snapshot.appendSections([Section.main])
         func addItems(_ menuItem: OutlineItem) {
             snapshot.appendItems([menuItem])

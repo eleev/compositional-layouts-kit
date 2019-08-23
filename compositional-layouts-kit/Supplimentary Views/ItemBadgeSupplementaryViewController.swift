@@ -122,7 +122,7 @@ extension ItemBadgeSupplementaryViewController {
         }
         
         // initial data
-        let snapshot = NSDiffableDataSourceSnapshot<Section, Model>()
+        var snapshot = NSDiffableDataSourceSnapshot<Section, Model>()
         snapshot.appendSections([.main])
         let models = (0..<100).map { Model(title: "\($0)", badgeCount: Int.random(in: 0..<3)) }
         snapshot.appendItems(models)
