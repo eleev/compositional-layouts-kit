@@ -7,7 +7,7 @@
 [![API](https://img.shields.io/badge/uikit-UICollectionViewCompositionalLayout-red.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 23/August/2019.**
+**Last Update: 12/May/2020.**
 
 ![](cover-composlayouts.png)
 
