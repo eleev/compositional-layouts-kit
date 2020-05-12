@@ -19,7 +19,7 @@ class BanerTileGridViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Baner Tile Grid Layout"
+        navigationItem.title = "Banner Tile Grid Layout"
         configureHierarchy()
         configureDataSource()
     }
