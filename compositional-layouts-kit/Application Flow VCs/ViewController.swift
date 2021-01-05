@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Combine
 
 class ViewController: UIViewController {
     
@@ -14,14 +15,24 @@ class ViewController: UIViewController {
         case main
     }
     
-    class OutlineItem: Hashable {
+    struct OutlineItem: Hashable {
+        
+        // MARK: - Properties
+        
         let title: String
         let indentLevel: Int
         let subitems: [OutlineItem]
         let outlineViewController: UIViewController.Type?
         let configuration: ((UIViewController) -> Void)?
         
-        var isExpanded = false
+        var isExpanded = CurrentValueSubject<Bool, Never>(false)
+        
+        var isGroup: Bool {
+            return self.outlineViewController == nil
+        }
+        private let identifier = UUID()
+
+        // MARK: - Initializers
         
         init(title: String,
              indentLevel: Int = 0,
@@ -34,20 +45,21 @@ class ViewController: UIViewController {
             self.outlineViewController = viewController
             self.configuration = configuration
         }
+
+        // MARK: - Methods
+        
         func hash(into hasher: inout Hasher) {
             hasher.combine(identifier)
         }
+        
         static func == (lhs: OutlineItem, rhs: OutlineItem) -> Bool {
             return lhs.identifier == rhs.identifier
         }
-        var isGroup: Bool {
-            return self.outlineViewController == nil
-        }
-        private let identifier = UUID()
     }
     
     var dataSource: UICollectionViewDiffableDataSource<Section, OutlineItem>! = nil
     var outlineCollectionView: UICollectionView! = nil
+    fileprivate lazy var cancellables = Set<AnyCancellable>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -126,10 +138,12 @@ extension ViewController {
                     withReuseIdentifier: OutlineItemCell.reuseIdentifier,
                     for: indexPath) as? OutlineItemCell else { fatalError("Could not create new cell") }
                 cell.label.text = menuItem.title
+                
                 cell.indentLevel = menuItem.indentLevel
                 cell.isGroup = menuItem.isGroup
-                cell.isExpanded = menuItem.isExpanded
-
+                cell.subitems = menuItem.subitems.count
+                cell.isExpanded = menuItem.isExpanded.value
+                
                 return cell
         }
         
@@ -160,7 +174,8 @@ extension ViewController {
         snapshot.appendSections([Section.main])
         func addItems(_ menuItem: OutlineItem) {
             snapshot.appendItems([menuItem])
-            if menuItem.isExpanded {
+            
+            if menuItem.isExpanded.value {
                 menuItem.subitems.forEach { addItems($0) }
             }
         }
@@ -181,12 +196,11 @@ extension ViewController: UICollectionViewDelegate {
         
         collectionView.deselectItem(at: indexPath, animated: true)
         if menuItem.isGroup {
-            menuItem.isExpanded.toggle()
+            menuItem.isExpanded.value.toggle()
+
             if let cell = collectionView.cellForItem(at: indexPath) as? OutlineItemCell {
-                UIView.animate(withDuration: 0.3) {
-                    cell.isExpanded = menuItem.isExpanded
-                    self.updateUI()
-                }
+                cell.isExpanded = menuItem.isExpanded.value
+                self.updateUI()
             }
         } else {
             if let viewController = menuItem.outlineViewController {
