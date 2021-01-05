@@ -2,12 +2,12 @@
 
 [![Platform](https://img.shields.io/badge/platform-iOS_13-yellow.svg)]()
 [![Platform](https://img.shields.io/badge/platform-iPadOS_13-darkyellow.svg)]()
-[![Language](https://img.shields.io/badge/language-Swift_5.1-orange.svg)]()
+[![Language](https://img.shields.io/badge/language-Swift_5.3-orange.svg)]()
 [![CustomLayouts](https://img.shields.io/badge/custom_layouts-12-orange.svg)]()
 [![API](https://img.shields.io/badge/uikit-UICollectionViewCompositionalLayout-red.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 23/August/2019.**
+**Last Update: 05/January/2021.**
 
 ![](cover-composlayouts.png)
 
