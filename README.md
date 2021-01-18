@@ -5,16 +5,18 @@
 [![Language](https://img.shields.io/badge/language-Swift_5.3-orange.svg)]()
 [![CustomLayouts](https://img.shields.io/badge/custom_layouts-12-orange.svg)]()
 [![API](https://img.shields.io/badge/uikit-UICollectionViewCompositionalLayout-red.svg)]()
+[![Last Commit](https://img.shields.io/github/last-commit/jvirus/compositional-layouts-kit)]()
+[![NLOC](https://img.shields.io/tokei/lines/github/jvirus/compositional-layouts-kit)]()
+[![Contributors](https://img.shields.io/github/contributors/jvirus/compositional-layouts-kit)]()
+[![Repo Size](https://img.shields.io/github/repo-size/jvirus/compositional-layouts-kit)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
-
-**Last Update: 05/January/2021.**
 
 ![](cover-composlayouts.png)
 
 ### If you like the project, please give it a star ⭐ It will show the creator your appreciation and help others to discover the repo.
 
 # ✍️ About
-📏 A set of advanced compositional layouts for `UICollectionView` with examples [Swift 5.1, iOS 13]. All the layouts support both `portrait` and `landscape` orientations as well as support for all `iOS` and `iPadOS` related size classes.
+📏 A set of advanced compositional layouts for `UICollectionView` with examples. All the layouts support both `portrait` and `landscape` orientations as well as support for all `iOS` and `iPadOS` related size classes.
 
 # 📚 Contents
 Please wait while the `.gif` files are loading (there are 12 files, that weight around 200Mb)...
